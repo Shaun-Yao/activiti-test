@@ -1,2 +1,0 @@
-# activiti-test
-activiti-test
