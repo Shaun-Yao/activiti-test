@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>repair form</title>
+</head>
+<body>
+<form class="form-horizontal"   th:action="@{/add/${processDefinitionId}}"  method="post">
+    <div th:utext="${renderedStartForm}" />
+</form>
+</body>
+</html>
