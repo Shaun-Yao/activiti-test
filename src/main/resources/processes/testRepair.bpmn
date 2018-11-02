@@ -3,7 +3,7 @@
   <process id="testRepair" isClosed="false" isExecutable="true" processType="None">
     <startEvent id="testRepairSt" name="StartEvent" activiti:formKey="repair.form" />
     <endEvent id="_3" name="EndEvent"/>
-    <userTask activiti:exclusive="true" id="_4" name="UserTask" />
+    <userTask activiti:exclusive="true" id="_4" name="UserTask"  activiti:formKey="repair.form"/>
     <userTask activiti:exclusive="true" id="_5" name="UserTask"/>
     <sequenceFlow id="_6" sourceRef="testRepairSt" targetRef="_4"/>
     <sequenceFlow id="_7" sourceRef="_4" targetRef="_5"/>

@@ -37,5 +37,14 @@ public class ActivitiController {
         return "repairForm";
     }
 
+    @GetMapping("/viewForm/{taskId}")
+    public String viewForm(@PathVariable String taskId, Model model) {
+        model.addAttribute("taskId", "123");
+        Object renderedStartForm = formService.getRenderedTaskForm(taskId);
+        System.out.println(renderedStartForm);
+        model.addAttribute("renderedStartForm", renderedStartForm);
+
+        return "viewForm";
+    }
 
 }
